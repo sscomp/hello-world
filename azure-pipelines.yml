@@ -18,9 +18,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
     echo Trinity Scripts test ~
-    echo $(solution)
-    echo $(buildPlatform)
-    echo $(buildConfiguration)
+    echo ${solution}
+    echo ${buildPlatform}
+    echo ${buildConfiguration}
   displayName: 'Run a multi-line script ： ${solution} , ${buildPlatform} , ${buildConfiguration}'
 
 - task: SSH@0
